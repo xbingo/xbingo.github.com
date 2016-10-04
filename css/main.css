@@ -2319,7 +2319,7 @@ hr {
   background: #222;
 }
 .posts-expand .post-body img {
-  margin: 0;
+  /*margin: 0;*/
 }
 .posts-expand .post-tags {
   text-align: left;

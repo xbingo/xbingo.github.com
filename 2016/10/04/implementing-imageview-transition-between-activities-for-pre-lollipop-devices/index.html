@@ -84,13 +84,26 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://www.xieyubin.com/about/index.html">
+<meta name="description" content="原文链接：Implementing ImageView transition between activities for pre-Lollipop devices.
+
+从Android 5.0开始，谷歌引入了一个很好玩的特性，“共享元素过场(shared elements transition)”。使用它我们可以让我们的UI元素在activity切换时就像用一个很酷的动画从一个activity">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【译】实现通用的共享图片过场动画">
+<meta property="og:url" content="http://www.xieyubin.com/2016/10/04/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/index.html">
 <meta property="og:site_name" content="rubinxie's home">
-<meta property="og:updated_time" content="2016-08-02T12:52:34.000Z">
+<meta property="og:description" content="原文链接：Implementing ImageView transition between activities for pre-Lollipop devices.
+
+从Android 5.0开始，谷歌引入了一个很好玩的特性，“共享元素过场(shared elements transition)”。使用它我们可以让我们的UI元素在activity切换时就像用一个很酷的动画从一个activity">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*egJ-IU2Un4fBYOZNGrfFHw.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*dTPkK-n4WXzqmcBYq8wwMg.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*HsP9bLz2ZQWgb74axmTWkA.gif">
+<meta property="og:updated_time" content="2016-10-04T09:11:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="【译】实现通用的共享图片过场动画">
+<meta name="twitter:description" content="原文链接：Implementing ImageView transition between activities for pre-Lollipop devices.
+
+从Android 5.0开始，谷歌引入了一个很好玩的特性，“共享元素过场(shared elements transition)”。使用它我们可以让我们的UI元素在activity切换时就像用一个很酷的动画从一个activity">
+<meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1600/1*egJ-IU2Un4fBYOZNGrfFHw.gif">
 
 
 
@@ -108,13 +121,7 @@
   };
 </script>
 
-  <title>
-  
-
-  
-    about | rubinxie's home
-  
-</title>
+  <title> 【译】实现通用的共享图片过场动画 | rubinxie's home </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -135,7 +142,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,9 +242,130 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                【译】实现通用的共享图片过场动画
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-04T16:50:31+08:00" content="2016-10-04">
+              2016-10-04
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/04/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/04/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-    
+      
+
+      
+        <blockquote>
+<p>原文链接：<a href="https://medium.com/@v.danylo/implementing-imageview-transition-between-activities-for-pre-lollipop-devices-8b24bc387a2a#.jagzoke8q" target="_blank" rel="external">Implementing ImageView transition between activities for pre-Lollipop devices.</a></p>
+</blockquote>
+<p>从Android 5.0开始，谷歌引入了一个很好玩的特性，“共享元素过场(shared elements transition)”。使用它我们可以让我们的UI元素在activity切换时就像用一个很酷的动画从一个activity移动到另一个一样。我们将在Android 5.0以下实现它。文中使用的代码可以在<a href="https://github.com/danylovolokh/ImageTransition" target="_blank" rel="external">GitHub</a>上找到。</p>
+<p>The animation is based on a known video from Chet Haase : <a href="https://www.youtube.com/watch?v=CPxkoe2MraA" target="_blank" rel="external">DevBytes: Custom Activity Animations</a><a href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCPxkoe2MraA&amp;utm_source=chameleon&amp;utm_medium=extensions&amp;utm_campaign=link_modifier" title="Get a direct link" target="_blank" rel="external"></a></p>
+<p>The difference between what I will do here and the demo from Chet is that I will also animate the <strong>ImageView</strong> Matrix. This will make animation look more natural. The ImageView from previous screen can have <strong>ImageView.ScaleType</strong> different from the enlarged <strong>ImageView</strong> on the “next screen”. Here is a demo:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*egJ-IU2Un4fBYOZNGrfFHw.gif" alt="" title="Shared element transition from one activity to another."></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*dTPkK-n4WXzqmcBYq8wwMg.gif" alt=""></p>
+<p>Canceling of shared element transition until it’s finished.</p>
+<p>Here is how it looks with a native shared element transition:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*HsP9bLz2ZQWgb74axmTWkA.gif" alt=""></p>
+<p>Shared element transition between activities on Android Lollipop.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/27/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -248,8 +376,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="about/index.html"
-           data-title="about" data-url="http://www.xieyubin.com/about/index.html">
+      <div class="ds-thread" data-thread-key="2016/10/04/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/"
+           data-title="【译】实现通用的共享图片过场动画" data-url="http://www.xieyubin.com/2016/10/04/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/">
       </div>
     
   </div>
@@ -273,8 +401,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -310,6 +447,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -406,6 +554,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
