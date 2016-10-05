@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xieyubin.com/"/>
-  <updated>2016-10-05T11:39:42.000Z</updated>
+  <updated>2016-10-05T12:17:10.000Z</updated>
   <id>http://www.xieyubin.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.xieyubin.com/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/"/>
     <id>http://www.xieyubin.com/implementing-imageview-transition-between-activities-for-pre-lollipop-devices/</id>
     <published>2016-10-03T16:00:00.000Z</published>
-    <updated>2016-10-05T11:39:42.000Z</updated>
+    <updated>2016-10-05T12:17:10.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>最近想要对项目里的一些过场动画作体验优化，但是迫于API level的限制，无法直接使用Android原生的特性，刚好可以参考此文实现。</p>
@@ -31,6 +31,7 @@
 <p>本文和Chet的例子不同之处在于，我还会处理<code>ImageView</code>的缩放。这会使动画看起来更自然。<code>ImageView</code>在前一个界面的<code>ImageView.ScaleType</code>跟第二个界面放大的<code>ImageView</code>是不一样的。以下是一个示例：<br><img src="http://o6l8fqr7s.bkt.clouddn.com/set_1-1.gif" alt="" title="Shared element transition from one activity to another."></p>
 <p><img src="http://o6l8fqr7s.bkt.clouddn.com/set_2-1.gif" alt="" title="Canceling of shared element transition until it’s finished."></p>
 <p>这是它用原生shared element transition实现的样子：<br><img src="http://o6l8fqr7s.bkt.clouddn.com/set_3-1.gif" alt="" title="Shared element transition between activities on Android Lollipop."></p>
+<a id="more"></a>
 <h3 id="使Activity透明"><a href="#使Activity透明" class="headerlink" title="使Activity透明"></a>使Activity透明</h3><p>工程里有两个Activity：</p>
 <ul>
 <li><code>ImagesListActivity</code></li>
@@ -118,7 +119,13 @@
     
       &lt;blockquote&gt;
 &lt;p&gt;最近想要对项目里的一些过场动画作体验优化，但是迫于API level的限制，无法直接使用Android原生的特性，刚好可以参考此文实现。&lt;/p&gt;
-&lt;p&gt;原文链接：&lt;a href=&quot;https://medium.com/@v.danylo/imple
+&lt;p&gt;原文链接：&lt;a href=&quot;https://medium.com/@v.danylo/implementing-imageview-transition-between-activities-for-pre-lollipop-devices-8b24bc387a2a#.jagzoke8q&quot;&gt;Implementing ImageView transition between activities for pre-Lollipop devices.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从Android 5.0开始，谷歌引入了一个很好玩的特性，“共享元素过场(shared elements transition)”。使用它我们可以让我们的UI元素在activity切换时就像用一个很酷的动画从一个activity移动到另一个一样。我们将在Android 5.0以下实现它。文中使用的代码可以在&lt;a href=&quot;https://github.com/danylovolokh/ImageTransition&quot;&gt;GitHub&lt;/a&gt;上找到。&lt;/p&gt;
+&lt;p&gt;本文的动画基于Chet Haase的视频：&lt;a href=&quot;https://www.youtube.com/watch?v=CPxkoe2MraA&quot;&gt;DevBytes: Custom Activity Animations&lt;/a&gt;&lt;a href=&quot;http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCPxkoe2MraA&amp;amp;utm_source=chameleon&amp;amp;utm_medium=extensions&amp;amp;utm_campaign=link_modifier&quot; title=&quot;Get a direct link&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本文和Chet的例子不同之处在于，我还会处理&lt;code&gt;ImageView&lt;/code&gt;的缩放。这会使动画看起来更自然。&lt;code&gt;ImageView&lt;/code&gt;在前一个界面的&lt;code&gt;ImageView.ScaleType&lt;/code&gt;跟第二个界面放大的&lt;code&gt;ImageView&lt;/code&gt;是不一样的。以下是一个示例：&lt;br&gt;&lt;img src=&quot;http://o6l8fqr7s.bkt.clouddn.com/set_1-1.gif&quot; alt=&quot;&quot; title=&quot;Shared element transition from one activity to another.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://o6l8fqr7s.bkt.clouddn.com/set_2-1.gif&quot; alt=&quot;&quot; title=&quot;Canceling of shared element transition until it’s finished.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这是它用原生shared element transition实现的样子：&lt;br&gt;&lt;img src=&quot;http://o6l8fqr7s.bkt.clouddn.com/set_3-1.gif&quot; alt=&quot;&quot; title=&quot;Shared element transition between activities on Android Lollipop.&quot;&gt;&lt;/p&gt;
     
     </summary>
     
