@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xieyubin.com/"/>
-  <updated>2016-10-05T12:17:10.000Z</updated>
+  <updated>2016-12-08T16:35:37.000Z</updated>
   <id>http://www.xieyubin.com/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android进阶学习资源整理</title>
+    <link href="http://www.xieyubin.com/android-learning-resources/"/>
+    <id>http://www.xieyubin.com/android-learning-resources/</id>
+    <published>2016-12-08T16:21:10.000Z</published>
+    <updated>2016-12-08T16:35:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>可能有些新同学在学习了Android开发的基础知识之后，希望学习一些进阶的技巧，或者对某些技术细节有更深入的了解。或者老司机们想跳出原有知识体系，了解更多业界前沿技术的应用，吸收新的思路和想法。光是看书和做项目时再研究也许并不能满足大家的需求。这里抛砖引玉，介绍一些Android进阶学习的资料，大家如果还有什么好的资源，欢迎补充。</p>
+<h2 id="Google官方"><a href="#Google官方" class="headerlink" title="Google官方"></a>Google官方</h2><h4 id="Android-Developers-墙内版"><a href="#Android-Developers-墙内版" class="headerlink" title="Android Developers (墙内版)"></a><a href="https://developer.android.com/index.html" target="_blank" rel="external">Android Developers</a> (<a href="https://developer.android.google.cn/index.html" target="_blank" rel="external">墙内版</a>)</h4><p>学习安卓最权威的地方，无需解释！最新推出了墙内可以直接访问的中国站点，但只有极少数文档有汉化。重点看Training和API Guides两部分。</p>
+<h4 id="Android开发者官方博客"><a href="#Android开发者官方博客" class="headerlink" title="Android开发者官方博客"></a><a href="http://android-developers.blogspot.com/" target="_blank" rel="external">Android开发者官方博客</a></h4><p>新版本、新特性的官方介绍可以在这里找到，可以第一时间尝鲜</p>
+<h4 id="Android-Developers-Youtube-Channel"><a href="#Android-Developers-Youtube-Channel" class="headerlink" title="Android Developers Youtube Channel"></a><a href="https://www.youtube.com/channel/UCVHFbqXqoYvEWM1Ddxl0QDg" target="_blank" rel="external">Android Developers Youtube Channel</a></h4><p>官方的youtube频道，里面有大量值得一看的视频列表，比如每年的Google I/O录像、著名的Android Performance Patterns、Android Development Petterns等等，DevBytes系列也有部分讲解小技巧的视频非常值得一看。这里干货非常多，美中不足的是仅有较少视频有中文字幕，如果遇到视频中英语带有口音的看得比较吃力（Google I/O的视频是重灾区）。</p>
+<h4 id="Google-Developers-Youtube-Channel"><a href="#Google-Developers-Youtube-Channel" class="headerlink" title="Google Developers Youtube Channel"></a><a href="https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw" target="_blank" rel="external">Google Developers Youtube Channel</a></h4><p>同样是Google官方的youtube频道，但内容覆盖范围涉及所有Google其它领域（如AI、广告）的开发者。有一些视频是单独针对Android开发者的，其它视频可当做了解前沿技术的途径。</p>
+<h4 id="谷歌开发者公众号"><a href="#谷歌开发者公众号" class="headerlink" title="谷歌开发者公众号"></a>谷歌开发者公众号</h4><p>微信公众号“Google_Developers”，Google中国官方开发者公众号，可作为补充阅读。</p>
+<h4 id="谷歌开发者社区"><a href="#谷歌开发者社区" class="headerlink" title="谷歌开发者社区"></a><a href="http://chinagdg.org/" target="_blank" rel="external">谷歌开发者社区</a></h4><p>里面有一些中文的技术文章，还将部分官方youtube频道里的视频搬运到了优酷，甚至有些会加上中文字幕。 </p>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h4 id="Awesome-Android"><a href="#Awesome-Android" class="headerlink" title="Awesome Android"></a>Awesome Android</h4><p>GitHub上有很多标题为Awesome Android的项目，包括但不限于 <a href="https://github.com/JStumpp/awesome-android" target="_blank" rel="external">JStumpp/awesome-android</a>、<a href="https://github.com/snowdream/awesome-android" target="_blank" rel="external">snowdream/awesome-android</a>、<a href="https://github.com/wasabeef/awesome-android-ui" target="_blank" rel="external">awesome-android-ui</a>、<a href="https://github.com/wasabeef/awesome-android-tools" target="_blank" rel="external">awesome-android-tools</a>等等。这些项目都是一些安卓开发的学习资源、开源类库、开发工具等的列表，可谓应有尽有。另外还有<a href="awesome-java">awesome-java</a>，有些工具或者类库同样适用于Android。</p>
+<h4 id="Trinea的开源项目汇总"><a href="#Trinea的开源项目汇总" class="headerlink" title="Trinea的开源项目汇总"></a><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Trinea的开源项目汇总</a></h4><p>汇总了很多国内外值得学习的开源项目，作者的博客和公众号也值得关注</p>
+<h4 id="free-programming-books"><a href="#free-programming-books" class="headerlink" title="free-programming-books"></a><a href="https://github.com/vhf/free-programming-books" target="_blank" rel="external">free-programming-books</a></h4><p>收集了许多免费开源的编程书籍，也有<a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md" target="_blank" rel="external">中文版本</a>。里面有很多并不是完整的书籍，也有一些文章列表或者文档翻译之类的资源。</p>
+<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><h4 id="掘金"><a href="#掘金" class="headerlink" title="掘金"></a><a href="https://gold.xitu.io/" target="_blank" rel="external">掘金</a></h4><p>墙裂推荐！每天都有大量干货文章，谁用谁知道~~ 有了它，妈妈再也不用担心我没有技术文章看了。</p>
+<h4 id="CSDN"><a href="#CSDN" class="headerlink" title="CSDN"></a><a href="http://www.csdn.net/" target="_blank" rel="external">CSDN</a></h4><p>国内老牌技术社区，内容非常全面，我们主要关注移动开发方面的资讯、博客、专题以及会议等等。网站精选的《移动开发周报》非常值得订阅。《程序员》杂志质量很高，但容量以及时效性都不够，偶尔看看就好。</p>
+<h4 id="infoq"><a href="#infoq" class="headerlink" title="infoq"></a><a href="http://www.infoq.com/cn/" target="_blank" rel="external">infoq</a></h4><p>有英文站也有中文站，个人认为看中文站就足够了。网站经常举办线下分享会，在网站上可以看到很多技术演讲视频。我们主要关注“移动”分类下面的内容。</p>
+<h4 id="Android-Weekly"><a href="#Android-Weekly" class="headerlink" title="Android Weekly"></a><a href="http://us2.campaign-archive2.com/home/?u=887caf4f48db76fd91e20a06d&amp;id=4eb677ad19" target="_blank" rel="external">Android Weekly</a></h4><p>国外的Android开发周报，国内很多文章都从这里翻译过来的。</p>
+<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><h4 id="Facebook-Code"><a href="#Facebook-Code" class="headerlink" title="Facebook Code"></a><a href="https://code.facebook.com/android/" target="_blank" rel="external">Facebook Code</a></h4><p>Facebook开发团队的官方博客，上面有Facebook的一些开源组件介绍，以及app优化经验。</p>
+<h4 id="Clot-McAnlis"><a href="#Clot-McAnlis" class="headerlink" title="Clot McAnlis"></a><a href="https://medium.com/@duhroach" target="_blank" rel="external">Clot McAnlis</a></h4><p>《Android Performance Patterns》里面的光头兄贵，主要研究方向是图片压缩以及安装包减包。</p>
+<h4 id="美团点评技术团队"><a href="#美团点评技术团队" class="headerlink" title="美团点评技术团队"></a><a href="http://tech.meituan.com/" target="_blank" rel="external">美团点评技术团队</a></h4><p>美团点评是国内技术积累较强的团队，这里面介绍Android方面技术的文章颇有含金量。</p>
+<h4 id="郭霖"><a href="#郭霖" class="headerlink" title="郭霖"></a><a href="http://blog.csdn.net/sinyu890807" target="_blank" rel="external">郭霖</a></h4><p>《第一行代码Android》作者，这本书我没有看过，但是他的文章写得还不错。他的微信公众号还会有其他作者的投稿。</p>
+<h4 id="胡凯"><a href="#胡凯" class="headerlink" title="胡凯"></a><a href="http://hukai.me/" target="_blank" rel="external">胡凯</a></h4><p>鹅厂上海p图团队同事，最著名的是提炼浓缩了官方视频《Android Performance Patterns》系列，另外还发起了官方培训教程翻译计划。</p>
+<h4 id="markzhai"><a href="#markzhai" class="headerlink" title="markzhai"></a><a href="http://blog.zhaiyifan.cn/" target="_blank" rel="external">markzhai</a></h4><p>前同事mark现在算是技术圈中的小网红，技术文章经常被各种大号推荐、转发，干货确实很多。</p>
+<h2 id="公众号"><a href="#公众号" class="headerlink" title="公众号"></a>公众号</h2><ul>
+<li>微信客户端开发(WeMobileDev)</li>
+<li>QQ空间终端开发团队(qzonemobiledev)</li>
+<li>QQ音乐技术团队</li>
+<li>腾讯bugly(weixinBugly)</li>
+</ul>
+<p>这几个公众号自然不用过多介绍，鹅厂出品必属精品。虽然更新频率不高，但是篇篇都是值得一读的精华。</p>
+<p>其它个人公众号或者博客太多了，这里不一一列举。像掘金啊，各种周报啊，转发文章的时候都会直接外链到原文地址或者留有公众号二维码，看到好的博客或者公众号可以适当订阅。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可能有些新同学在学习了Android开发的基础知识之后，希望学习一些进阶的技巧，或者对某些技术细节有更深入的了解。或者老司机们想跳出原有知识体系，了解更多业界前沿技术的应用，吸收新的思路和想法。光是看书和做项目时再研究也许并不能满足大家的需求。这里抛砖引玉，介绍一些Andr
+    
+    </summary>
+    
+      <category term="总结" scheme="http://www.xieyubin.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="学习资源" scheme="http://www.xieyubin.com/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>【译】实现通用的共享图片过场动画</title>
